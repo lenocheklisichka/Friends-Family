@@ -29,8 +29,12 @@
 }
 
 @font-face {
-  font-family: 'Corinthia', arial;
-  src: url('../fonts/4256.ttf');
+  font-family: 'Corinthia';
+  src: url('../fonts/corinthia.eot');
+  src: url('../fonts/corinthia.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/corinthia.woff2') format('woff2'),
+    url('../fonts/corinthia.woff') format('woff'),
+    url('../fonts/corinthia.ttf') format('truetype'),
 }
 
 @mixin semibold {

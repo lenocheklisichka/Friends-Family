@@ -1,12 +1,30 @@
 .navbar
-&-wrap
-  display: flex
-  justify-content: space-between
-&__logo
-  background: url(../img/navbar/logo.png) no-repeat
-  width: 218px
-  height: 34px
-&__menu
-  max-width: 600px
-  justify-content: space-between
-  text-transform: uppercase
+  &__wrap
+    display: flex
+    justify-content: space-between
+    padding-top: 45px
+  &__logo
+    background: url(../img/navbar/logo.png) no-repeat
+    width: 218px
+    height: 34px
+  &__nav
+    display: flex
+    text-transform: uppercase
+    align-items: center
+  &__nav-link
+    list-style: none
+    font-size: 14px
+    +semibold
+    color: #000
+    padding-right: 90px
+  &__nav-link:hover
+    color: #ff5b97
+  &__nav-link:last-child
+    padding-right: 0
+  
+
+ 
+  
+
+
+
