@@ -74,8 +74,7 @@ h1, h2, h3, p, ul {
 }
 
 .section {
-  padding: 130px;
-  padding-bottom: 70px;
+  padding-top: 120px;
 }
 
 .section-title {
@@ -331,6 +330,7 @@ h1, h2, h3, p, ul {
   font-size: 13px;
   font-family: 'Proxima Nova Light Italic', sans-serif;
   text-align: center;
+  padding-top: 20px;
 }
 
 .box-wrap {
@@ -339,7 +339,7 @@ h1, h2, h3, p, ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-bottom: 120px;
+  padding-bottom: 70px;
 }
 
 .box__item {
@@ -357,6 +357,12 @@ h1, h2, h3, p, ul {
 
 .box__block {
   padding-top: 70px;
+}
+
+.box__block:hover {
+  border: 2px solid #e72867;
+  cursor: pointer;
+  padding: 15px;
 }
 
 .box__img1 {
@@ -394,5 +400,145 @@ h1, h2, h3, p, ul {
 .box__text {
   font-size: 14px;
   font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.delivery__worldmap {
+  background: url(../img/delivery/map.png) no-repeat;
+  width: 1147px;
+  height: 457px;
+  position: relative;
+}
+
+.delivery__heart {
+  background: url(../img/delivery/heart.png) no-repeat;
+  width: 44px;
+  height: 39px;
+  position: absolute;
+  left: 57%;
+  top: 15%;
+  cursor: pointer;
+}
+
+.delivery__wrap {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.delivery__dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #e72867;
+  cursor: pointer;
+}
+
+.delivery__dot1 {
+  position: absolute;
+  left: 47.5%;
+  top: 35%;
+}
+
+.delivery__dot2 {
+  position: absolute;
+  left: 59%;
+  top: 50%;
+}
+
+.delivery__dot3 {
+  position: absolute;
+  left: 54.5%;
+  top: 28%;
+}
+
+.delivery__dot4 {
+  position: absolute;
+  left: 35.5%;
+  top: 61%;
+}
+
+.delivery__dot5 {
+  position: absolute;
+  left: 36%;
+  top: 10%;
+}
+
+.yoursketches-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.yoursketches__box {
+  padding-top: 120px;
+  padding-top: 140px;
+}
+
+.yoursketches__head {
+  font-size: 25px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.yoursketches__text {
+  font-size: 15px;
+  font-family: 'Proxima Nova Light', sans-serif;
+  padding: 40px 0 50px 0;
+}
+
+.yoursketches__img {
+  background: url(../img/yoursketches/yoursketches_img.png) no-repeat;
+  width: 560px;
+  height: 631px;
+}
+
+.yoursketches__form {
+  font-size: 11px;
+  font-family: 'Proxima Nova Light', sans-serif;
+  width: 50%;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.yoursketches__arrow {
+  background: url(../img/yoursketches/arrow.png) no-repeat;
+  width: 17px;
+  height: 15px;
+}
+
+.yoursketches__link {
+  font-size: 11px;
+  padding-left: 10px;
+  font-family: 'Proxima Nova Light', sans-serif;
+}
+
+.yoursketches__file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.yoursketches__button {
+  display: block;
+  font-size: 11px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  color: #ffffff;
+  padding: 15px;
+  border: 1px solid #be4973;
+  background-color: #e32462;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 50%;
+}
+
+.yoursketches__link:hover {
+  color: #e32462;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.yoursketches__button:hover {
+  border: 2px solid #a10d3d;
 }
 /*# sourceMappingURL=style.css.map */
