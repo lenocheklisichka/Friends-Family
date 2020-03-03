@@ -1,7 +1,7 @@
 .delivery
   &__worldmap
     background: url(../img/delivery/map.png) no-repeat
-    width: 1147px
+    width: 100%
     height: 457px
     position: relative
   &__heart
@@ -41,3 +41,21 @@
     position: absolute
     left: 36%
     top: 10%
+@media (max-width: 1024px)
+  .delivery 
+    &__worldmap
+      background-size: contain
+      background-position: center
+    &__heart
+      top: 20%
+@media (max-width: 768px)
+  .delivery
+    &__worldmap
+      background-size: contain
+    &__wrap
+      padding-bottom: 0
+    &__heart
+      top: 9%
+
+
+       
