@@ -3,59 +3,32 @@
     background: url(../img/delivery/map.png) no-repeat
     width: 100%
     height: 457px
-    position: relative
-  &__heart
-    background: url(../img/delivery/heart.png) no-repeat
-    width: 44px
-    height: 39px
-    position: absolute
-    left: 57%
-    top: 15%
-    cursor: pointer
   &__wrap
     padding-top: 60px
     padding-bottom: 80px
-  &__dot
-    width: 5px
-    height: 5px
-    border-radius: 50%
-    background-color: #e72867
-    cursor: pointer
-  &__dot1
-    position: absolute
-    left: 47.5%
-    top: 35%
-  &__dot2
-    position: absolute
-    left: 59%
-    top: 50%
-  &__dot3
-    position: absolute
-    left: 54.5%
-    top: 28%
-  &__dot4
-    position: absolute
-    left: 35.5%
-    top: 61%
-  &__dot5
-    position: absolute
-    left: 36%
-    top: 10%
+@media (max-width: 1123px)
+  .delivery 
+    &__worldmap
+      background-size: contain
 @media (max-width: 1024px)
   .delivery 
     &__worldmap
       background-size: contain
       background-position: center
-    &__heart
-      top: 20%
 @media (max-width: 768px)
   .delivery
     &__worldmap
       background-size: contain
+      height: 400px
     &__wrap
       padding-bottom: 0
-    &__heart
-      top: 9%
-
+@media (max-width: 480px)
+  .delivery 
+    &__worldmap
+      height: 300px
+@media (max-width: 320px)
+  .delivery 
+    &__worldmap
+      height: 200px
 
        

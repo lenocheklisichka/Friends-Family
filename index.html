@@ -15,12 +15,48 @@
       <div class="container">
         <div class="navbar__wrap">
           <a class="navbar__logo" href="#"></a>
-          <ul class="navbar__nav">
-            <a class="navbar__nav-link" href="#">главная</a>
-            <a class="navbar__nav-link" href="#">преимущества</a>
-            <a class="navbar__nav-link" href="#">отзывы</a>
-            <a class="navbar__nav-link" href="#">контакты</a>
-          </ul>
+          <div class="navbar__box">
+            <ul class="navbar__nav">
+              <li class="navbar__nav-link"><a href="#">главная</a></li>
+              <li class="navbar__nav-link"><a href="#">преимущества</a></li>
+              <li class="navbar__nav-link"><a href="#">отзывы</a></li>
+              <li class="navbar__nav-link"><a href="#">контакты</a></li>
+            </ul>
+            <button class="btn-menu" type="button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path
+                      d="M491.318,235.318H20.682C9.26,235.318,0,244.577,0,256s9.26,20.682,20.682,20.682h470.636
+                                       c11.423,0,20.682-9.259,20.682-20.682C512,244.578,502.741,235.318,491.318,235.318z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M491.318,78.439H20.682C9.26,78.439,0,87.699,0,99.121c0,11.422,9.26,20.682,20.682,20.682h470.636
+                                       c11.423,0,20.682-9.26,20.682-20.682C512,87.699,502.741,78.439,491.318,78.439z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M491.318,392.197H20.682C9.26,392.197,0,401.456,0,412.879s9.26,20.682,20.682,20.682h470.636
+                                       c11.423,0,20.682-9.259,20.682-20.682S502.741,392.197,491.318,392.197z" />
+                  </g>
+                </g>
+              </svg>
+            </button>
+            <div class="modal" style="display: none;">
+              <button class="btn-close" type="button"><span style="color: black;">&times;</span></button>
+              <ul class="nav-modal">
+                <li class="navbar__nav-item"><a href="#">главная</a></li>
+                <li class="navbar__nav-item"><a href="#">преимущества</a></li>
+                <li class="navbar__nav-item"><a href="#">отзывы</a></li>
+                <li class="navbar__nav-item"><a href="#">контакты</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -35,7 +71,7 @@
           <p class="atelier__text">Оставьте свой номер телефона или ссылку<br>на VK страницу и мы с вами свяжемся.</p>
           <button type="button" target:_blank title="оставьте контакты" class="btn">Оставить контакты</button>
         </div>
-        <div class="atelier__img"></div>
+        <img src="img/atelier/img_block.png" alt="">
       </div>
     </div>
   </section>
@@ -43,7 +79,7 @@
   <section class="mother">
     <div class="container">
       <div class="mother-wrap">
-        <div class="mother__img"></div>
+        <img src="img/YouandDaughter/float_left.png" alt="">
         <div class="mother__block">
           <span class="mother__span">Только для Вас и Вашей дочки!</span>
           <h2 class="mother__head">Мы создаем комплекты<br> в единственном экземпляре</h2>
@@ -65,7 +101,7 @@
           <p class="sewing__text2">Оставьте заявку с фотографией и мы вышлем вам<br> примерную смету через 15 минут!</p>
           <button type="button" target:_blank title="оставьте контакты" class="btn">Оставить контакты</button>
         </div>
-        <div class="sewing__img"></div>
+        <img src="img/sewing/sewing_img.png" alt="">
       </div>
     </div>
   </section>
@@ -114,12 +150,12 @@
       <div class="box-wrap">
         <div class="box__item">
           <div class="box__block">
-            <div class="box__img1"></div>
+            <div class="box__img1 box__img"></div>
             <p class="box__span">Вешалка</p>
             <p class="box__text">Удобная вешалка в ЭКО-дизайне</p>
           </div>
           <div class="box__block">
-            <div class="box__img2"></div>
+            <div class="box__img2 box__img"></div>
             <p class="box__span">Изделие в биобумаге</p>
             <p class="box__text">Ваше изделие в экологичной разлагающейся бумаге</p>
           </div>
@@ -129,12 +165,12 @@
         </div>
         <div class="box__item2">
           <div class="box__block">
-            <div class="box__img3"></div>
+            <div class="box__img3 box__img"></div>
             <p class="box__span">Инструкция по уходу</p>
             <p class="box__text">Как стирать, гладить одежду из ткани изделия</p>
           </div>
           <div class="box__block">
-            <div class="box__img4"></div>
+            <div class="box__img4 box__img"></div>
             <p class="box__span">Подарок!</p>
             <p class="box__text">На выбор - фотосессия или кулон!</p>
           </div>
@@ -148,12 +184,6 @@
       <h2 class="section-title">Осуществляем доставку по всему миру!</h2>
       <div class="delivery__wrap">
         <div class="delivery__worldmap">
-          <div class="delivery__heart"></div>
-          <div class="delivery__dot1 delivery__dot"></div>
-          <div class="delivery__dot2 delivery__dot"></div>
-          <div class="delivery__dot3 delivery__dot"></div>
-          <div class="delivery__dot4 delivery__dot"></div>
-          <div class="delivery__dot5 delivery__dot"></div>
         </div>
       </div>
     </div>
@@ -168,10 +198,9 @@
             скажем
             примерную цену
             и<br> срок изготовления.</p>
-          <form action="#"  metod="post" class="yoursketches__box-form">
+          <form action="#" metod="post" class="yoursketches__box-form">
             <input type="text" name="name" placeholder="Ваше имя" class="yoursketches__form" required />
-            <input type="tel" name="mobal" placeholder="Ваш телефон" 
-              class="yoursketches__form" required />
+            <input type="tel" name="mobal" placeholder="Ваш телефон" class="yoursketches__form" required />
             <div class="yoursketches__file">
               <a href="#" title="скачать файл" class="yoursketches__arrow"></a>
               <a href="#" class="yoursketches__link">Прикрепить файл</a>
@@ -179,11 +208,23 @@
             <button type="button" title="оставьте заявку" class="yoursketches__button">Оставить заявку</button>
           </form>
         </div>
-        <div class="yoursketches__img"></div>
+        <img src="img/yoursketches/yoursketches_img.png">
       </div>
     </div>
   </section>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(".btn-menu").click(function () {
+        $(".modal").show()
+      });
+      $(".btn-close").click(function () {
+        $(".modal").hide()
+      });
+    });
+  </script>
 </body>
 
 </html>

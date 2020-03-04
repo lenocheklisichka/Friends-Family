@@ -18,21 +18,29 @@
     +light
     padding-top: 60px
     padding-bottom: 50px
-  &__img
-    background: url(../img/atelier/img_block.png) no-repeat
-    width: 560px
-    height: 634px
+@media (max-width: 1009px)
+  .atelier
+    &__head
+      font-size: 35px
 @media (max-width: 768px)
   .atelier
     &-wrap
       flex-direction: column-reverse
-      max-width: 560px
+      max-width: 500px
       margin: auto
     &__box
       margin: auto
       text-align: center
       padding: 50px 0
-
+@media (max-width: 320px)
+  .atelier
+    &__head
+      font-size: 20px
+    &__span
+      font-size: 30px
+    &__text
+      font-size: 12px
+      
 
 
   

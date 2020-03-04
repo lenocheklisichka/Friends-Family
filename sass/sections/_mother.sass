@@ -2,10 +2,6 @@
   &-wrap
     display: flex
     justify-content: space-between
-  &__img
-    background: url(../img/YouandDaughter/float_left.png) no-repeat
-    width: 560px
-    height: 626px
   &__span
     font-size: 37px
     +Corinthia
@@ -29,13 +25,23 @@
   .mother
     &-wrap
       flex-direction: column
-      max-width: 560px
+      max-width: 500px
       margin: auto
     &__block
       margin: auto
       text-align: center
       padding: 50px 0
-
+@media (max-width: 320px)
+  .mother
+    &__span
+      font-size: 25px
+    &__head
+      font-size: 20px
+    &__text, &__text2
+      font-size: 12px
+    &__text
+      padding-top: 40px
+      
 
 
 

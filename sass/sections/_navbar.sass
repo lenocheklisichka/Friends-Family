@@ -7,24 +7,36 @@
     background: url(../img/navbar/logo.png) no-repeat
     width: 218px
     height: 34px
-  &__nav
+  &__box
+    display: flex
+  &__box>&__nav
     display: flex
     text-transform: uppercase
     align-items: center
+    justify-content: space-around
   &__nav-link
     list-style: none
     font-size: 14px
     +semibold
     color: #000
-    padding-right: 90px
-  &__nav-link:hover
+    padding-right: 80px
+  &__nav-link a:hover
     color: #ff5b97
   &__nav-link:last-child
     padding-right: 0
-  
-
- 
-  
-
-
+@media (max-width: 1000px)
+  .navbar
+    &__nav-link
+      display: none
+    &__nav-item a
+      color: #fff
+      font-size: 13px
+      border-bottom: 1px solid #fff
+@media (max-width: 320px)
+  .navbar
+    &__logo
+      background: url(../img/navbar/logo1.png) no-repeat
+      width: 150px
+      height: 24px
+      
 
