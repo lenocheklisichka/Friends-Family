@@ -183,10 +183,6 @@ img {
   text-align: center;
 }
 
-.bg-box {
-  padding-top: 120px;
-}
-
 @media (max-width: 1123px) {
   img {
     width: 50%;
@@ -207,12 +203,6 @@ img {
   }
   img {
     width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .bg-box {
-    display: none;
   }
 }
 
@@ -575,7 +565,7 @@ img {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 430px) {
   .schemework-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -605,6 +595,13 @@ img {
       flex-basis: 50%;
   text-align: right;
   padding-right: 40px;
+}
+
+.box__image {
+  background: url(../img/box/bg_box.png) no-repeat;
+  width: 420px;
+  height: 234px;
+  margin-top: 80px;
 }
 
 .box__item2 {
@@ -658,6 +655,31 @@ img {
 .box__text {
   font-size: 14px;
   font-family: 'Proxima Nova Light', sans-serif;
+}
+
+@media (max-width: 1123px) {
+  .box__image {
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .box__item, .box__item2 {
+    text-align: center;
+  }
+  .box__img {
+    margin: auto;
+  }
+  .box__text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box__image {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {
@@ -802,9 +824,9 @@ img {
 @media (max-width: 768px) {
   .yoursketches-wrap {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     margin: auto;
     max-width: 560px;
   }
